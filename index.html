@@ -6,10 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Geeky & Fun</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    This is our landing page!
+    <header>
+        <span class="header__title">Geeky</span>
+        <img src="images/icon.png" width="64" />
+        <span class="header__title">Fun</span>
+    </header>
+    <div class="container-wrapper">
+        <div class="container">
+            <!-- <h1> Welcome! This the home of the "Geeky & Fun" community. Here's what we're working on right now:</h1> -->
+            <div class="workshop-wrapper">
+                <div class="workshop">
+                    <p class="tag">10 hours of JavaScript Workshop</p>
+                    <h1 class="workshop__title">
+                        Progressive Web Apps
+                    </h1>
+                    <p> If you're the kind of JavaScript developer who's so
+                        <span class="bold">passionate</span> and
+                        <span class="bold">curious</span> that codes even after office hours, then join us in this workshop focused on Progressive
+                        Web Apps!
+                    </p>
+                    <p>We'll discover the huge benefits they bring to the table and "get our hands dirty" by upgrading a simple
+                        app to a Progressive one. 🚀 🚀 🚀</p>
+                    <!-- <ul>
+                    <li>learn the fundamentals of PWA's</li>
+                    <li>discuss and decide on the best architecture for our usecase</li>
+                    <li>implement Push Notifications right in the browser</li>
+                    <li>cache critical resources so that the app loads Instantly</li>
+                    <li>make it work offline (yes, Web Apps can run offline now) </li>
+                    <li>and much much more!!! 🚀</li>
+                </ul> -->
+                    <div class="countdown">
+                        <span id="days">03</span>
+                        Days ,
+                        <span id="minutes">1000</span> minutes,
+                        <span id="seconds">03</span> seconds
+
+                    </div>
+                    <p class="registration">
+                        Now, because we want to offer you the best experience possible, we've limited the number of seats to 15. So hurry up and
+                        register
+                        <a href="https://docs.google.com/forms/d/1ia9cCCvOm4N0IKt432-AmfpHNr8pnGfvQ7FFlfB21ls">here </a>.
+                    </p>
+                    <p class="dots"> ... </p>
+                    <p>PS: the workshop is 100%
+                        <span class="bold">free</span>!</p>
+                    <p>PPS: Nope, there's no catch here! Think of it as a gift from us, 3 very passionate developers who happen
+                        to enjoy teaching 😃</p>
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </div>
+        <h1 class="center"> The team</h1>
+        <br/>
+        <br/>
+        <div class="trainers">
+            <div class="member">
+                <img src="images/pava.png" width="128" />
+                <a class="member__name" href="https://iampava.com">Alexandru Păvăloi</a>
+                <p class="job-title">Trainer</p>
+            </div>
+            <div class="member">
+                <img src="images/pava.png" width="128" />
+                <a class="member__name" href="https://iampava.com">Alexandru Badea</a>
+                <p class="job-title">Trainer</p>
+            </div>
+            <div class="member">
+                <img src="images/pava.png" width="128" />
+                <a class="member__name" href="https://iampava.com">Stefan Hagiu</a>
+                <p class="job-title">Trainer</p>
+            </div>
+            <div class="member">
+                <img src="images/pava.png" width="128" />
+                <a class="member__name" href="https://iampava.com">Elena Alupoaie</a>
+                <p class="job-title">UX Designer</p>
+            </div>
+        </div>
+        <footer> For more info e'mail us:
+            <a href="mailto:afunnygeek@gmail.com">afunnygeek@gmail.com</a> ❤
+        </footer>
+    </div>
+
+    <script>
+        let daysElement = document.getElementById('days');
+        let minutesElement = document.getElementById('minutes');
+        let secondsElement = document.getElementById('seconds');
+
+        let workshopDate = 1520008200000;
+        let now = Date.now();
+
+        let milisecondsInADay = 24 * 60 * 60 * 1000;
+        let milisecondsInAMinute = 60 * 1000;
+
+        let days = Math.floor((workshopDate - now) / milisecondsInADay);
+        let minutes = Math.floor((workshopDate - (now + days * milisecondsInADay)) / milisecondsInAMinute);
+        let seconds = Math.floor((workshopDate - (now + days * milisecondsInADay + minutes * milisecondsInAMinute)) /
+            1000);
+
+        daysElement.innerHTML = days;
+        minutesElement.innerHTML = minutes;
+        secondsElement.innerHTML = seconds;
+
+        setInterval(function () {
+            seconds--;
+            if (seconds < 0) {
+                seconds += 60;
+                minutes--;
+                if (minutes < 0) {
+                    minutes += 24 * 60;
+                    days--;
+                    daysElement.innerHTML = days;
+                }
+                minutesElement.innerHTML = minutes;
+            }
+            secondsElement.innerHTML = seconds;
+        }, 1000);
+    </script>
 </body>
 
 </html>
