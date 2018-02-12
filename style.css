@@ -1,6 +1,7 @@
 /** GENERAL*/
 .bold {
     font-weight: bold;
+    color: #ff4e4e;
 }
 
 .center {
@@ -13,6 +14,17 @@
     letter-spacing: 0.2em;
     font-size: 2em;
 }
+.link {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #838383;
+    padding: 5px 5px 0 5px;
+    /* transition: all .5s linear; */
+}
+.link:hover {
+    background-color: #4141ac;
+    color: #fff;
+}
 
 body {
     padding: 0;
@@ -21,7 +33,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 header {
-    /* background-color: #4141ac; */
     text-align: center;
     padding-top: 5px;
     border-bottom: 2px solid #4141ac;
@@ -34,6 +45,11 @@ header {
     vertical-align: top;
     padding: 0 20px;
     font-size: 32px;
+    width: 100px;
+    text-align: right;
+}
+.header__title:nth-of-type(2) {
+    text-align: left;
 }
 header img {
     border-radius: 50%;
@@ -49,15 +65,22 @@ header img {
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 925px;
     margin: 0 auto;
-    padding-top: 2em;
+}
+.welcome {
+    background-color: #4141ac;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.75em;
+    margin-bottom: 75px;
 }
 .workshop-wrapper {
     background-image: url('images/workshop.jpg');
     background-size: cover;
     border-radius: 15px;
     background-position: center;
+    margin-top: 50px;
 }
 .workshop {
     background-color: rgba(0, 0, 0, 0.9);
@@ -67,8 +90,7 @@ header img {
     /* color: #000; */
     font-size: 18px;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px #c1c1bb;
+    box-shadow: 1px 1px 10px #838383;
 }
 .workshop a {
     color: #fff;
@@ -89,7 +111,22 @@ header img {
     margin: 2em 0;
     text-align: center;
 }
-
+.location {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.venue,
+.city {
+    display: inline-block;
+    margin: 0 50px;
+}
+.city{
+    font-size: 24px;
+    vertical-align: top;
+}
+.venue a {
+    display: block;
+}
 .trainers {
     text-align: center;
     font-size: 0;
@@ -97,17 +134,51 @@ header img {
 }
 .trainers .member {
     font-size: 18px;
+    position: relative;
     display: inline-block;
     min-width: 150px;
-    width: 25%;
+    width: 33.333%;
     box-sizing: border-box;
     padding: 0 20px;
+}
+.member .top {
+    position: relative;
+    transition: opacity 0.35s ease-in-out;
+}
+.member .top:hover {
+    opacity: 0;
+}
+.member .bottom {
+    position: absolute;
+    transform: translate(-100%);
+    z-index: -1;
+    border-radius: 50%;
 }
 .member__name {
     display: block;
 }
 .job-title {
     margin-top: 0;
+}
+
+.register {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.register a {
+    color: #4141ac;
+    border: 2px solid #4141ac;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.register a:hover {
+    color: #fff;
+    background-color: #4141ac;
 }
 
 footer {
