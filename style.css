@@ -170,6 +170,7 @@ header img {
 .member .top {
     position: relative;
     transition: opacity 0.35s ease-in-out;
+    border-radius: 50%;
 }
 
 .member .top:hover {
