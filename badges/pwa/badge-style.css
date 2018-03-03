@@ -26,7 +26,7 @@
     padding: 1em 0 0 0;
     font-weight: normal;
     transition: opacity 1s;
-    color: color(white);
+    color: #fff;
     position: relative;
 }
 .badge__name {
@@ -40,7 +40,7 @@
     height: 60%;
     width: 100%;
     transition: all 0.35s cubic-bezier(0.25, 0.5, 0.27, 1.21);
-    border-top: 1px solid color(silver);
+    border-top: 1px solid #bcc2c6;
     overflow-y: auto;
     overflow-x: hidden;
 }
