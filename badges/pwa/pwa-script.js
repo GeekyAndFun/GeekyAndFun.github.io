@@ -4,7 +4,7 @@
     
     var element = document.getElementById('gf-pwa-workshop-badge');
     
-    iframe.src = "https://geekyandfun.github.io";
+    iframe.src = 'data:text/html;charset=utf-8,' + encodeURI('<body> ceva </body>');
     
     element.appendChild(iframe);
     setTimeout(() => {
