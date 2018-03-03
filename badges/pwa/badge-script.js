@@ -17,7 +17,7 @@
         var element = document.getElementById('gf-pwa-workshop-badge');
         var iframe = document.createElement('iframe');
 
-        if (!element.dataset.name in names) {
+        if (!(element.dataset.name in names)) {
             throw new Error("the name you inserted isn't part of our database for the workshop");
         }
 
