@@ -7,8 +7,10 @@
     iframe.src = "https://geekyandfun.github.io";
     
     element.appendChild(iframe);
-    
+    setTimeout(() => {
     iframe.contentDocument.body.innerHTML = 'ceva';
+console.log('done');        
+    }, 2000);
 
     // var names = ['alexandru-pavaloi'];
     // try {
