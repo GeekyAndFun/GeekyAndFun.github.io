@@ -32,9 +32,44 @@
     </header>
     <div class="container-wrapper">
         <div class="container">
-            <h1 class="welcome center"> Hey there! Our online home is still under construction but here's what we're up to in the real world... </h1>
+            <h1 class="welcome emphasize center"> Hey there, and welcome to our online home! We're 3 passionate JavaScript developers who decided to organize workshops
+                for the local community. </h1>
+            <div class="events-container">
+                <h3 class="emphasize"> Upcoming events: </h3>
+                <p> No upcoming events, yet!</p>
+            </div>
+            <div class="events-container">
+                <h3 class="emphasize title"> Past events: </h3>
 
-            <div class="workshop-wrapper">
+                <div class="past-workshop" id="pwa-iasi">
+                    <h1>10 hours of JavaScript: Progressive Web Apps</h1>
+                    10 hours of Javascript is a 12 hour workshop (breaks included) focused on Progressive Web Apps and the huge benefits they
+                    bring to the table. While upgrading a simple app to a Progressive one we will:
+
+                    <ul>
+                        <li> 🚀 learn the fundamentals of PWA's</li>
+                        <li> 👍 discuss and decide on the best architecture for our use-case</li>
+                        <li> 🔥 implement Push Notifications right in the browser</li>
+                        <li> 💾 cache critical resources so that the app loads instantly</li>
+                        <li> 💪 make it work offline (yes, Web Apps can run offline now)</li>
+                        <li> ⚡ and much much more!!!</li>
+                    </ul>
+                    <br/>
+                    <div class="location">
+                        <div class="venue">
+                            <img src="images/the-grape.png" width="128" />
+                            <a class="link" target="_blank" href="https://thegrape.ro/">The Grape</a>
+                        </div>
+                        <div class="city">
+                            <p> 2nd,3rd & 4th
+                                <br/>March</p>
+                            <p> Iasi,</p>
+                            <p>Romania</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="workshop-wrapper">
                 <div class="workshop">
                     <p class="tag">10 hours of JavaScript Workshop</p>
                     <h1 class="workshop__title">
@@ -47,6 +82,8 @@
                     </p>
                     <p>We'll discover the huge benefits they bring to the table and "get our hands dirty" by upgrading a simple
                         app to a Progressive one. 🚀 🚀 🚀</p>
+
+                    <p class="dots"> ... </p>
                     <div class="countdown">
                         <span id="days">03</span>
                         Days ,
@@ -58,8 +95,8 @@
                         We want to offer you the best experience possible, so we've limited the number of seats to 15. And because there's a certain
                         level of preliminary JavaScript knowledge needed for this workshop, we created a short
                         <a href="https://goo.gl/forms/6jr5sxYNU5FEoWU32">application form </a>.
-                        <br/> <br/>
-                        Deadline: Tuesday, 27th February
+                        <br/>
+                        <br/> Deadline: Tuesday, 27th February
                     </p>
                     <p class="dots"> ... </p>
                     <p>PS: the workshop is 100%
@@ -67,11 +104,11 @@
                     <p>PPS: Nope, there's no catch here! Think of it as a gift from us, 3 very passionate developers who happen
                         to enjoy teaching 😃</p>
                 </div>
-            </div>
+            </div> -->
             <br/>
             <br/>
         </div>
-        <div class="location">
+        <!-- <div class="location">
             <h1 class="center"> The location</h1>
             <br/>
             <br/>
@@ -86,8 +123,8 @@
                 <p> Iasi,</p>
                 <p>Romania</p>
             </div>
-        </div>
-        <h1 class="center"> The trainers</h1>
+        </div> -->
+        <h1 class="center"> The team</h1>
         <br/>
         <div class="trainers">
             <div class="member">
@@ -113,17 +150,17 @@
                 </p>
             </div>
         </div>
-        <div class="register">
+        <!-- <div class="register">
             <a href="https://goo.gl/forms/6jr5sxYNU5FEoWU32">Register for free
                 <span style="color: red">❤</span>
             </a>
-        </div>
+        </div> -->
         <footer> For more info e'mail us:
             <a href="mailto:afunnygeek@gmail.com">afunnygeek@gmail.com</a> ❤
         </footer>
     </div>
 
-    <script>
+    <!-- <script>
         let daysElement = document.getElementById('days');
         let minutesElement = document.getElementById('minutes');
         let secondsElement = document.getElementById('seconds');
@@ -157,7 +194,7 @@
             }
             secondsElement.innerHTML = seconds;
         }, 1000);
-    </script>
+    </script> -->
 </body>
 
 </html>

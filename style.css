@@ -84,6 +84,18 @@ header img {
     margin-bottom: 75px;
 }
 
+.emphasize {
+    background-color: #4141ac;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+}
+
+.events-container,
+.events-container .title {
+    margin-bottom: 3em;
+}
+
 .workshop-wrapper {
     background-image: url('images/workshop.jpg');
     background-size: cover;
@@ -123,6 +135,21 @@ header img {
     font-size: 2.5em;
     margin: 2em 0;
     text-align: center;
+}
+
+.past-workshop {
+    border: 2px solid #4141ac;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.past-workshop ul {
+    list-style: none;
+}
+
+.past-workshop .location {
+    margin-bottom: 0;
 }
 
 .location {
