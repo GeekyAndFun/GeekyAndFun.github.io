@@ -4,14 +4,15 @@
         'alexandru-badea': 'Alexandru Badea',
         'bogdan-hagiu': 'Bogdan Hagiu',
         'alex-bolbosenco': 'Alex Bolboșenco',
-        'andrei-constantin': 'Andrei Constantin',
+        // 'andrei-constantin': 'Andrei Constantin',
         'andu-andrici': 'Andu Andrici',
         'bogdan-carbune': 'Bogdan Cărbune',
-        'dan-alexandru': 'Dan Alexandru',
+        // 'dan-alexandru': 'Dan Alexandru',
         'daniel-condurachi': 'Daniel Condurachi',
         'daniel-unguru': 'Daniel Unguru',
         'mihail-iftodi': 'Mihail Iftodi',
-        'vlad-serban': 'Vlad Șerban'
+        'vlad-serban': 'Vlad Șerban',
+        'ciprian-recianu': 'Ciprian Recianu'
     };
     try {
         var element = document.getElementById('gf-pwa-workshop-badge');
