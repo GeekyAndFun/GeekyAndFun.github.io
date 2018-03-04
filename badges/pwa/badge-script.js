@@ -1,13 +1,9 @@
 (function setUpBadge() {
     var names = {
-        'alexandru-pavaloi': 'Alexandru Păvăloi',
-        'alexandru-badea': 'Alexandru Badea',
-        'bogdan-hagiu': 'Bogdan Hagiu',
         'alex-bolbosenco': 'Alex Bolboșenco',
-        // 'andrei-constantin': 'Andrei Constantin',
         'andu-andrici': 'Andu Andrici',
         'bogdan-carbune': 'Bogdan Cărbune',
-        // 'dan-alexandru': 'Dan Alexandru',
+        'dan-alexandru': 'Dan Alexandru',
         'daniel-condurachi': 'Daniel Condurachi',
         'daniel-unguru': 'Daniel Unguru',
         'mihail-iftodi': 'Mihail Iftodi',
