@@ -21,7 +21,7 @@
     var dates = {
         2: '25 Mar 2018'
     };
-    
+
     try {
         var element = document.getElementById('gf-pwa-workshop-badge');
         var iframe = document.createElement('iframe');
@@ -35,7 +35,7 @@
         iframe.style.border = 0;
         iframe.style.overflow = 'hidden';
 
-        iframe.src = 'data:text/html;charset=utf-8,' + encodeURIComponent('<head><link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"><link rel="stylesheet" href="https://geekyandfun.github.io/badges/pwa/badge-style.css" /></head><body><div class="badge"><div class="badge__top"><h1 class="badge__title"> Progressive Web Apps certification</h1><h2 class="badge__name">' + names[element.dataset.name] + '</h2></div><div class="badge__bottom is-oblique background-color--white"><p class="additional-info">Awarded by <a href="https://geekyandfun.github.io/" target="_blank">Geeky & Fun</a> for having succesfully completed our <a href="https://geekyandfun.github.io#pwa-iasi" target="_blank">10 hours PWA workshop</a>.</p><span class="date">' + element.dataset.session ? '04 Mar 2018' : dates[element.dataset.session] + '</span><div class="keywords"><img src="https://geekyandfun.github.io/badges/icon.png" width="38"/></div></div></div></body>');
+        iframe.src = 'data:text/html;charset=utf-8,' + encodeURIComponent('<head><link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"><link rel="stylesheet" href="https://geekyandfun.github.io/badges/pwa/badge-style.css" /></head><body><div class="badge"><div class="badge__top"><h1 class="badge__title"> Progressive Web Apps certification</h1><h2 class="badge__name">' + names[element.dataset.name] + '</h2></div><div class="badge__bottom is-oblique background-color--white"><p class="additional-info">Awarded by <a href="https://geekyandfun.github.io/" target="_blank">Geeky & Fun</a> for having succesfully completed our <a href="https://geekyandfun.github.io#pwa-iasi" target="_blank">10 hours PWA workshop</a>.</p><span class="date">' + (!element.dataset.session ? '04 Mar 2018' : dates[element.dataset.session]) + '</span><div class="keywords"><img src="https://geekyandfun.github.io/badges/icon.png" width="38"/></div></div></div></body>');
         element.appendChild(iframe);
     } catch (e) {
         console.error('Geeky & Fun badge failed to initialize |', e);
